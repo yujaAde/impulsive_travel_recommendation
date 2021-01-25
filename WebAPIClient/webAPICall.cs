@@ -19,23 +19,16 @@ namespace WebAPIClient
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Add("Authorization", header);
         } 
-        public static async Task<ta_docs> ProcessRepositories()
+        public static async Task<ta_docs> categorySearch(string query)
         {
             string uri = "https://dapi.kakao.com/v2/local/search/category.json";
-            string url = uri + "?category_group_code=AT4&x=37.559029962862304&y=126.98816827267991&radius=20000";
-            
-            //var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
-            //var stringTask = client.GetStringAsync(url);
+            string url = uri + query;
+         
             var streamTask = client.GetStreamAsync(url);
             
-            
-//            var touristAttractions = await JsonSerializer.DeserializeAsync<List<touristAttraction>>(await streamTask);
             var touristAttractions = await JsonSerializer.DeserializeAsync<ta_docs>(await streamTask);
             
             return touristAttractions;
-
-            /*var msg = await stringTask;
-            Console.Write(msg);*/
         }
 
         public static async Task<c2r_docs> coord2regionCode(string query)
