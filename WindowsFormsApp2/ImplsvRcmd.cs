@@ -63,5 +63,10 @@ namespace WindowsFormsApp2
             data = "장소 : " + str_location + " 좌표 : (" + double_xAxis + ". " + double_yAxis + ") 설명 : " + str_Information;
             LB_ImplsvRcmd_Location.Items.Add(data);
         }
+
+        private void BT_ImplsvRcmd_Filter_Click(object sender, EventArgs e)
+        {
+            recommend.find_recommend();
+        }
     }
 }
