@@ -43,20 +43,18 @@
             // 
             this.LB_ImplsvRcmd_Location.FormattingEnabled = true;
             this.LB_ImplsvRcmd_Location.HorizontalScrollbar = true;
-            this.LB_ImplsvRcmd_Location.ItemHeight = 24;
-            this.LB_ImplsvRcmd_Location.Location = new System.Drawing.Point(897, 682);
-            this.LB_ImplsvRcmd_Location.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.LB_ImplsvRcmd_Location.ItemHeight = 12;
+            this.LB_ImplsvRcmd_Location.Location = new System.Drawing.Point(483, 341);
             this.LB_ImplsvRcmd_Location.Name = "LB_ImplsvRcmd_Location";
-            this.LB_ImplsvRcmd_Location.Size = new System.Drawing.Size(533, 1012);
+            this.LB_ImplsvRcmd_Location.Size = new System.Drawing.Size(472, 508);
             this.LB_ImplsvRcmd_Location.TabIndex = 1;
             this.LB_ImplsvRcmd_Location.SelectedIndexChanged += new System.EventHandler(this.LB_ImplsvRcmd_Location_SelectedIndexChanged);
             // 
             // BT_ImplsvRcmd_Rcmd
             // 
-            this.BT_ImplsvRcmd_Rcmd.Location = new System.Drawing.Point(6, 34);
-            this.BT_ImplsvRcmd_Rcmd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BT_ImplsvRcmd_Rcmd.Location = new System.Drawing.Point(3, 17);
             this.BT_ImplsvRcmd_Rcmd.Name = "BT_ImplsvRcmd_Rcmd";
-            this.BT_ImplsvRcmd_Rcmd.Size = new System.Drawing.Size(232, 80);
+            this.BT_ImplsvRcmd_Rcmd.Size = new System.Drawing.Size(125, 40);
             this.BT_ImplsvRcmd_Rcmd.TabIndex = 2;
             this.BT_ImplsvRcmd_Rcmd.Text = "여행지 추천";
             this.BT_ImplsvRcmd_Rcmd.UseVisualStyleBackColor = true;
@@ -64,10 +62,9 @@
             // 
             // BT_ImplsvRcmd_Filter
             // 
-            this.BT_ImplsvRcmd_Filter.Location = new System.Drawing.Point(6, 156);
-            this.BT_ImplsvRcmd_Filter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BT_ImplsvRcmd_Filter.Location = new System.Drawing.Point(3, 78);
             this.BT_ImplsvRcmd_Filter.Name = "BT_ImplsvRcmd_Filter";
-            this.BT_ImplsvRcmd_Filter.Size = new System.Drawing.Size(232, 80);
+            this.BT_ImplsvRcmd_Filter.Size = new System.Drawing.Size(125, 40);
             this.BT_ImplsvRcmd_Filter.TabIndex = 3;
             this.BT_ImplsvRcmd_Filter.Text = "여행지 필터링 (미구현)";
             this.BT_ImplsvRcmd_Filter.UseVisualStyleBackColor = true;
@@ -75,10 +72,9 @@
             // 
             // BT_ImplsvRcmd_Exit
             // 
-            this.BT_ImplsvRcmd_Exit.Location = new System.Drawing.Point(299, 156);
-            this.BT_ImplsvRcmd_Exit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BT_ImplsvRcmd_Exit.Location = new System.Drawing.Point(161, 78);
             this.BT_ImplsvRcmd_Exit.Name = "BT_ImplsvRcmd_Exit";
-            this.BT_ImplsvRcmd_Exit.Size = new System.Drawing.Size(232, 80);
+            this.BT_ImplsvRcmd_Exit.Size = new System.Drawing.Size(125, 40);
             this.BT_ImplsvRcmd_Exit.TabIndex = 4;
             this.BT_ImplsvRcmd_Exit.Text = "종료";
             this.BT_ImplsvRcmd_Exit.UseVisualStyleBackColor = true;
@@ -87,10 +83,9 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(22, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1410, 356);
+            this.label1.Size = new System.Drawing.Size(943, 179);
             this.label1.TabIndex = 5;
             this.label1.Text = "여행지 추천 버튼을 눌러주세요";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,18 +97,16 @@
             this.panel1.Controls.Add(this.BT_ImplsvRcmd_Rcmd);
             this.panel1.Controls.Add(this.BT_ImplsvRcmd_Exit);
             this.panel1.Controls.Add(this.BT_ImplsvRcmd_Filter);
-            this.panel1.Location = new System.Drawing.Point(897, 404);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Location = new System.Drawing.Point(483, 202);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(535, 264);
+            this.panel1.Size = new System.Drawing.Size(472, 133);
             this.panel1.TabIndex = 6;
             // 
             // BT_ImplsvRcmd_testbutton
             // 
-            this.BT_ImplsvRcmd_testbutton.Location = new System.Drawing.Point(299, 34);
-            this.BT_ImplsvRcmd_testbutton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BT_ImplsvRcmd_testbutton.Location = new System.Drawing.Point(161, 17);
             this.BT_ImplsvRcmd_testbutton.Name = "BT_ImplsvRcmd_testbutton";
-            this.BT_ImplsvRcmd_testbutton.Size = new System.Drawing.Size(228, 80);
+            this.BT_ImplsvRcmd_testbutton.Size = new System.Drawing.Size(123, 40);
             this.BT_ImplsvRcmd_testbutton.TabIndex = 5;
             this.BT_ImplsvRcmd_testbutton.Text = "TestButton";
             this.BT_ImplsvRcmd_testbutton.UseVisualStyleBackColor = true;
@@ -121,25 +114,23 @@
             // 
             // WB_ImplsvRcmd_Mapviewer
             // 
-            this.WB_ImplsvRcmd_Mapviewer.Location = new System.Drawing.Point(22, 404);
-            this.WB_ImplsvRcmd_Mapviewer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.WB_ImplsvRcmd_Mapviewer.MinimumSize = new System.Drawing.Size(37, 40);
+            this.WB_ImplsvRcmd_Mapviewer.Location = new System.Drawing.Point(12, 202);
+            this.WB_ImplsvRcmd_Mapviewer.MinimumSize = new System.Drawing.Size(20, 20);
             this.WB_ImplsvRcmd_Mapviewer.Name = "WB_ImplsvRcmd_Mapviewer";
-            this.WB_ImplsvRcmd_Mapviewer.Size = new System.Drawing.Size(845, 1294);
+            this.WB_ImplsvRcmd_Mapviewer.Size = new System.Drawing.Size(455, 647);
             this.WB_ImplsvRcmd_Mapviewer.TabIndex = 7;
             this.WB_ImplsvRcmd_Mapviewer.TabStop = false;
             this.WB_ImplsvRcmd_Mapviewer.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // ImplsvRcmd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1456, 1722);
+            this.ClientSize = new System.Drawing.Size(967, 861);
             this.Controls.Add(this.WB_ImplsvRcmd_Mapviewer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LB_ImplsvRcmd_Location);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ImplsvRcmd";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);

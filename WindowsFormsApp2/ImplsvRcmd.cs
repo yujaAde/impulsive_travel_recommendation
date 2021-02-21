@@ -8,29 +8,59 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text.Json;
+
 namespace WindowsFormsApp2
 {
     public partial class ImplsvRcmd : Form
     {
+        ta_docs ta_docs; //전역변수 사용함
+
         public ImplsvRcmd()
         {
             InitializeComponent();
         }
-
-        
 
         private void BT_ImplsvRcmd_Exit_Click(object sender, EventArgs e) //종료버튼이 눌린경우
         {
             this.Close();
         }
 
+        private void ListBoxUpdate(ta_docs ta_docs)
+        {
+            LB_ImplsvRcmd_Location.Items.Clear();//일단 데이터를 지워
+
+            foreach (var i in ta_docs.touristAttractions) // 리스트 출력
+            {
+                string str_location2 = i.place_name; // 관광지 이름
+                string str_Information = i.category_name; //분류
+
+                string data = "이름: " + str_location2 + " 설명 : " + str_Information;
+                LB_ImplsvRcmd_Location.Items.Add(data);
+            }
+        }
+
         private void BT_ImplsvRcmd_Rcmd_Click(object sender, EventArgs e) //추천버튼이 눌린 경우
         {
-            
+            c2r_docs c2r_docs = recommend.rand_recommend();
+
+            string query = "?category_group_code=AT4&x=" + c2r_docs.c2r[0].x + "&y=" + c2r_docs.c2r[0].y + "&radius=20000";
+            var x_value = c2r_docs.c2r[0].x;
+            var y_value = c2r_docs.c2r[0].y;
+            string first_string = "랜덤좌표 결과 - (" + x_value + ", " + y_value + ")";
+            MessageBox.Show(first_string);
+            ta_docs = webAPICall.categorySearch(query);
+
+            ListBoxUpdate(ta_docs); // 리스트박스에 데이터를 업데이트한다
+
+
+            //이 아래가 맵에 대한 코드가 들어갈 곳
             try
             {
-                MessageBox.Show("테스트용으로 일단 네이버 띄움");
-                this.WB_ImplsvRcmd_Mapviewer.Navigate("https://www.naver.com");
+                //MessageBox.Show("테스트용으로 일단 네이버 띄움");
+                this.WB_ImplsvRcmd_Mapviewer.Navigate("https://www.naver.com"); //여기에 x,y 좌표에 대한 데이터로 지도를 띄워라
             }
             catch(Exception ex)
             {
@@ -41,32 +71,39 @@ namespace WindowsFormsApp2
 
         private void LB_ImplsvRcmd_Location_SelectedIndexChanged(object sender, EventArgs e) // 관광지 리스트에서 아이템을 선택한 경우
         {
-            MessageBox.Show(LB_ImplsvRcmd_Location.SelectedItem.ToString());
+            int selected_index = LB_ImplsvRcmd_Location.SelectedIndex;
+
+            string x_value = ta_docs.touristAttractions[selected_index].x;
+            string y_value = ta_docs.touristAttractions[selected_index].y;
+            string data = " 좌표 : (" + x_value + ". " + y_value + ")";
+
+            MessageBox.Show(data); // 이부분을 지도 출력하는 부분으로 고쳐라
         }
 
-        private void BT_ImplsvRcmd_testbutton_Click(object sender, EventArgs e) //테스트 버튼. 일단 누르면 리스트박스에 내용추가
+        private void BT_ImplsvRcmd_testbutton_Click(object sender, EventArgs e) //테스트 버튼.
         {
-            string str_location = "서대전역";
-            double double_xAxis = 32.22;
-            double double_yAxis = 34.22;
-            string str_Information = "주변에 아무것도 없음";
+            //클래스 내의 전역변수 ta_docs를 통해 리스트의 데이터 갱신하도록 테스트 구현
 
-            string data = "장소 : " + str_location + " 좌표 : (" + double_xAxis + ". " + double_yAxis + ") 설명 : " + str_Information;
             LB_ImplsvRcmd_Location.Items.Clear();//일단 데이터를 지워
-            LB_ImplsvRcmd_Location.Items.Add(data);
 
-            str_location = "우리집";
-            double_xAxis = 32.25;
-            double_yAxis = 34.22;
-            str_Information = "경모 거주중";
+            foreach (var i in ta_docs.touristAttractions)
+            {
+                string str_location = i.address_name; // 주소. ex) 대전시 중구 태평동
+                string str_location2 = i.place_name; // 관광지 이름
+                string double_xAxis = i.x;
+                string double_yAxis = i.y;
+                string str_Information = i.category_name; //분류
 
-            data = "장소 : " + str_location + " 좌표 : (" + double_xAxis + ". " + double_yAxis + ") 설명 : " + str_Information;
-            LB_ImplsvRcmd_Location.Items.Add(data);
+                string data = "주소 : " + str_location +" 이름: "+str_location2 + " 좌표 : (" + double_xAxis + ". " + double_yAxis + ") 설명 : " + str_Information;
+                LB_ImplsvRcmd_Location.Items.Add(data);
+            }
+
         }
 
-        private void BT_ImplsvRcmd_Filter_Click(object sender, EventArgs e)
+        private void BT_ImplsvRcmd_Filter_Click(object sender, EventArgs e) //필터 버튼
         {
-            recommend.find_recommend();
+            //미구현
         }
     }
 }
+
