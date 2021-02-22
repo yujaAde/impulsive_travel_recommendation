@@ -123,6 +123,7 @@
   <ItemGroup>
     <Content Include="MapServer.js" />
     <Content Include="MapPage.html" />
+    <Content Include="map\map.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

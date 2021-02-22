@@ -60,7 +60,10 @@ namespace WindowsFormsApp2
             try
             {
                 //MessageBox.Show("테스트용으로 일단 네이버 띄움");
-                this.WB_ImplsvRcmd_Mapviewer.Navigate("https://www.naver.com"); //여기에 x,y 좌표에 대한 데이터로 지도를 띄워라
+                this.WB_ImplsvRcmd_Mapviewer.Navigate("http://echerin.iptime.org/"); //여기에 x,y 좌표에 대한 데이터로 지도를 띄워라
+
+
+                ExecScript("setCenter", x_value.ToString(), y_value.ToString());  // 중심 좌표로 이동(동작 하지 않음)
             }
             catch(Exception ex)
             {
@@ -77,7 +80,9 @@ namespace WindowsFormsApp2
             string y_value = ta_docs.touristAttractions[selected_index].y;
             string data = " 좌표 : (" + x_value + ". " + y_value + ")";
 
-            MessageBox.Show(data); // 이부분을 지도 출력하는 부분으로 고쳐라
+            //MessageBox.Show(data); // 이부분을 지도 출력하는 부분으로 고쳐라
+            ExecScript("setCenter", x_value.ToString(), y_value.ToString());  // 선택한 관광지로 이동
+
         }
 
         private void BT_ImplsvRcmd_testbutton_Click(object sender, EventArgs e) //테스트 버튼.
@@ -103,6 +108,21 @@ namespace WindowsFormsApp2
         private void BT_ImplsvRcmd_Filter_Click(object sender, EventArgs e) //필터 버튼
         {
             //미구현
+            markerScript("marker"); // 추천된 리스트의 마커를 표시함
+        }
+
+        // window form -> javascript
+        private void ExecScript(string func_name, string x, string y)   // 좌표 이동 스크립트 호출
+        {
+            WB_ImplsvRcmd_Mapviewer.Document.InvokeScript(func_name, new object[] { x, y });
+        }
+        private void markerScript(string func_name)   // 마커 생성 스크립트 호출
+        {
+            foreach(var i in ta_docs.touristAttractions)
+            {
+                WB_ImplsvRcmd_Mapviewer.Document.InvokeScript(func_name, new object[] {i.x, i.y});
+            }
+            WB_ImplsvRcmd_Mapviewer.Document.InvokeScript("marker_on", new object[] {});
         }
     }
 }

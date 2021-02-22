@@ -69,3 +69,33 @@ C:\Users\momo\Desktop\충동적 여행지 추천 프로젝트\impulsive_travel_r
 C:\Users\momo\Desktop\충동적 여행지 추천 프로젝트\impulsive_travel_recommendation_new\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\momo\Desktop\충동적 여행지 추천 프로젝트\impulsive_travel_recommendation_new\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\momo\Desktop\충동적 여행지 추천 프로젝트\impulsive_travel_recommendation_new\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Buffers.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Memory.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Text.Json.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.ValueTuple.dll
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Buffers.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Memory.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Text.Json.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\bin\Debug\System.ValueTuple.xml
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ImplsvRcmd.resources
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\ajw03\Source\Repos\yujaAde\impulsive_travel_recommendation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

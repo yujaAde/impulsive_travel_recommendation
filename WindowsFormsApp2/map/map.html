@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
+    <script>
+        function CallScript(va1, va2)
+		{
+			alert('Val1 : ' + va1 + " / Val2 : " + va2);
+		}
+        
+        function setCenter(x, y) {            
+            // 이동할 위도 경도 위치를 생성합니다 
+            var moveLatLon = new kakao.maps.LatLng(y, x);
+            // 지도 중심을 이동 시킵니다
+            map.setCenter(moveLatLon);
+        }
+
+        var positions = [];
+        function marker(x, y) {        
+            positions.push(new kakao.maps.LatLng(y, x));
+   
+        }
+        function marker_on() {
+            for (var i = 0; i < positions.length; i++) {
+                // 마커를 생성합니다    
+                var marker = new kakao.maps.Marker({
+                    map: map, // 마커를 표시할 지도
+                    position: positions[i] // 마커를 표시할 위치
+                });
+            }
+
+        }
+        </script>
+    </head>
+    <body>
+    	<div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9afb778a543c03274bf662a4dac41ece"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+        
+	</script>
+</body>
+</html>
