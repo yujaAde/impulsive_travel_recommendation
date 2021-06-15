@@ -2,7 +2,7 @@ using System;
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 
-namespace WindowsFormsApp2
+namespace ImpsvRcmd
 {
     public class Repository
     {

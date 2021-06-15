@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace ImpsvRcmd
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1() //메인폼(이름 깜빡하고 못고침)
+        public MainForm()
         {
             InitializeComponent();
             this.Text = "impulsive_travel_recommendation"; //제목

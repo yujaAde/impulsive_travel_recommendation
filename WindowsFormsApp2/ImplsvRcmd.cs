@@ -12,7 +12,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
 
-namespace WindowsFormsApp2
+namespace ImpsvRcmd
 {
     public partial class ImplsvRcmd : Form
     {
@@ -97,14 +97,36 @@ namespace WindowsFormsApp2
 
                 string data = "주소 : " + str_location +" 이름: "+str_location2 + " 좌표 : (" + double_xAxis + ". " + double_yAxis + ") 설명 : " + str_Information;
                 LB_ImplsvRcmd_Location.Items.Add(data);
-            }   
+            }
+
+            marker_clear();
+            markerScript("marker"); // 추천된 리스트의 마커를 표시함
         }
 
         private void BT_ImplsvRcmd_Filter_Click(object sender, EventArgs e) //필터 버튼
         {
-            //구현
-            marker_clear();
-            markerScript("marker"); // 추천된 리스트의 마커를 표시함
+            c2r_docs c2r_docs = recommend.rand_recommend_filter();
+
+            string query = "?category_group_code=AT4&x=" + c2r_docs.c2r[0].x + "&y=" + c2r_docs.c2r[0].y + "&radius=20000";
+            var x_value = c2r_docs.c2r[0].x;
+            var y_value = c2r_docs.c2r[0].y;
+            string first_string = "랜덤좌표 결과 - (" + x_value + ", " + y_value + ")";
+            MessageBox.Show(first_string);
+            ta_docs = webAPICall.categorySearch(query);
+
+            ListBoxUpdate(ta_docs); // 리스트박스에 데이터를 업데이트한다
+
+
+            //이 아래가 맵에 대한 코드가 들어갈 곳
+            try
+            {
+                string url = "http://echerin.iptime.org/?x=" + x_value.ToString() + "&y=" + y_value.ToString();
+                this.WB_ImplsvRcmd_Mapviewer.Navigate(url); //여기에 x,y 좌표에 대한 데이터로 지도를 띄워라
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         // window form -> javascript

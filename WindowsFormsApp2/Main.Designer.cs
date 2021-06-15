@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp2
+﻿namespace ImpsvRcmd
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.

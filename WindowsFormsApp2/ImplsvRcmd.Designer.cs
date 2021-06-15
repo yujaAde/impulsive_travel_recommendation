@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp2
+﻿namespace ImpsvRcmd
 {
     partial class ImplsvRcmd
     {
@@ -66,7 +66,7 @@
             this.BT_ImplsvRcmd_Filter.Name = "BT_ImplsvRcmd_Filter";
             this.BT_ImplsvRcmd_Filter.Size = new System.Drawing.Size(125, 40);
             this.BT_ImplsvRcmd_Filter.TabIndex = 3;
-            this.BT_ImplsvRcmd_Filter.Text = "여행지 필터링 (미구현)";
+            this.BT_ImplsvRcmd_Filter.Text = "여행지 필터링 (테스트)";
             this.BT_ImplsvRcmd_Filter.UseVisualStyleBackColor = true;
             this.BT_ImplsvRcmd_Filter.Click += new System.EventHandler(this.BT_ImplsvRcmd_Filter_Click);
             // 
@@ -108,7 +108,7 @@
             this.BT_ImplsvRcmd_testbutton.Name = "BT_ImplsvRcmd_testbutton";
             this.BT_ImplsvRcmd_testbutton.Size = new System.Drawing.Size(123, 40);
             this.BT_ImplsvRcmd_testbutton.TabIndex = 5;
-            this.BT_ImplsvRcmd_testbutton.Text = "TestButton";
+            this.BT_ImplsvRcmd_testbutton.Text = "주소 표시 버튼";
             this.BT_ImplsvRcmd_testbutton.UseVisualStyleBackColor = true;
             this.BT_ImplsvRcmd_testbutton.Click += new System.EventHandler(this.BT_ImplsvRcmd_testbutton_Click);
             // 
